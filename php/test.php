@@ -50,6 +50,11 @@
                 </li>
                 <li><label>유효기간</label>
                     <input name="till" id="till"  value="2023-01-01">
+                    <?
+                    // 단방향 암호화 기술 md5
+                    $hashcode=md5('아시아경제');
+                    ?>
+                    <input type='hidden' name="hash" id="hash"  value="<?=$hashcode?>">
                 </li>
             </ul>
         </form>
